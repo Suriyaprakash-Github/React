@@ -31,9 +31,9 @@ function App() {
       location: "Hyderabad",
     },
   ];
-  const expe = [];
+  const expenseArray = [];
   for (let i = 0; i < expenses.length; i++) {
-    expe.push(
+    expenseArray.push(
       <ExpenseItem
         title={expenses[i].title}
         amount={expenses[i].amount}
@@ -70,7 +70,7 @@ function App() {
         date={expenses[3].date}
         location={expenses[3].location}
       ></ExpenseItem> */}
-      {expe}
+      {expenseArray}
     </div>
   );
 }
